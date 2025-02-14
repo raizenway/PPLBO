@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignore MySQL socket file
+inventory-service/docker/mysql/data/mysql.sock
