@@ -1,6 +1,6 @@
 HELP.md
 target/
-mysql/
+volume-data/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
