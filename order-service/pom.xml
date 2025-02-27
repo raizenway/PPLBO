@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>3.2.5</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.techie.microservices</groupId>
 	<artifactId>order-service</artifactId>
@@ -28,7 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
-		<spring-cloud.version>2024.0.0</spring-cloud.version>
+		<spring-cloud.version>2023.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,6 +43,10 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
+		<dependency>
+      		<groupId>org.springframework.boot</groupId>
+      		<artifactId>spring-boot-starter-groovy-templates</artifactId>
+    	</dependency>
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-mysql</artifactId>
@@ -95,6 +99,14 @@
     		<version>5.4.0</version>
     		<scope>test</scope>
 		</dependency>
+				<dependency>
+    	  <groupId>org.springframework.cloud</groupId>
+    	  <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+    	</dependency>
+		<dependency>
+    	  <groupId>org.springframework.boot</groupId>
+    	  <artifactId>spring-boot-starter-actuator</artifactId>
+    	</dependency>
 		<dependency>
       		<groupId>org.springframework.cloud</groupId>
       		<artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
